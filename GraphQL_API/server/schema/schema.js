@@ -2,6 +2,7 @@ const graphql = require('graphql');
 const _ = require('lodash');
 const Project = require('../models/project');
 const Task = require('../models/task');
+const{ GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema } = graphql;
 
 
 const TaskType = new graphql.GraphQLObjectType({
